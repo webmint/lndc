@@ -10,9 +10,23 @@ npm install
 npm run serve
 ```
 
+### To run for development with backend
+```
+npm run start
+```
+
 ### Compiles and minifies for production
 ```
 npm run build
+```
+
+### To run production with backend
+```
+npm run start-prod
+```
+### To view production use
+```
+http://localhost:4000/
 ```
 
 ### Run your tests
@@ -30,5 +44,3 @@ npm run lint
 npm run test:unit
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

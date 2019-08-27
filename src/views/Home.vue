@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-container>
+    <v-row>
+      <v-col
+        xs="12"
+        md="6"
+        offset-md="3"
+      >
+        <LoanCalculatorForm />
+      </v-col>
+      <v-col
+        xs="12"
+        md="6"
+        offset-md="3"
+      >
+        <LoanCalculatorResult />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
-
 export default {
-  name: 'home',
   components: {
-    HelloWorld,
+    LoanCalculatorForm: () => import('@/components/LoanCalculatorForm'),
+    LoanCalculatorResult: () => import('@/components/LoanCalculatorResult'),
   },
 };
 </script>
